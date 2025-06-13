@@ -6,3 +6,12 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
+
+
+model Dev {
+  id        String   @id
+  name      String
+  techs     String
+
+  @@map("dev")
+}
